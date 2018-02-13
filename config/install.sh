@@ -8,10 +8,15 @@ cd fonts
 cd .. 
 rm -rf fonts
 
+#FIXME - doest not work 
 cp -r config/.oh-my-zsh ~/
 cp config/.zshrc ~/
 
+# FIXME - need to edit prompt + edit .zshrc -> path into it + bs @ end of file
+
 source ~/.zshrc
+
+
 
 
 
