@@ -17,9 +17,10 @@ sed -i "s/prompt_segment blue black '%~'/prompt_segment blue black '%c'/" ~/.oh-
 
 git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
 
+cd .. 
+rm -rf custom-config-ohmyzsh
 
 source ~/.zshrc
-
 
 
 
