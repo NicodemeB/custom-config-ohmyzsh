@@ -8,11 +8,14 @@ cd fonts
 cd .. 
 rm -rf fonts
 
-cp -r config/.oh-my-zsh ~/
-if [ $1 -eq "-mac" ]
-	then 
-	cp config/.zshrc ~/
-fi
+# cp -r config/.oh-my-zsh ~/
+# if [ $1 -eq "-mac" ]
+# 	then 
+# 	cp config/.zshrc ~/
+# fi
+
+sed -i 's/robbyrussell/agnoster/' ~/.zshrc
+sed -i "s/prompt_segment blue black '%~'/prompt_segment blue black '%c'/" ~/.oh-my-zsh/themes/agnoster.zsh-theme
 
 source ~/.zshrc
 
