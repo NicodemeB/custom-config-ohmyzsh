@@ -1,3 +1,5 @@
+#!/usr/bin/env zsh
+
 sudo apt install git zsh
 
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
@@ -8,13 +10,9 @@ cd fonts
 cd .. 
 rm -rf fonts
 
-# cp -r config/.oh-my-zsh ~/
-# if [ $1 -eq "-mac" ]
-# 	then 
-# 	cp config/.zshrc ~/
-# fi
 
 sed -i 's/robbyrussell/agnoster/' ~/.zshrc
+sed -i 's/plugins=(git)/plugins=(\n\tgit\n\tnanoc\n\tz\n\t)/' ~/.zshrc
 sed -i "s/prompt_segment blue black '%~'/prompt_segment blue black '%c'/" ~/.oh-my-zsh/themes/agnoster.zsh-theme
 
 source ~/.zshrc
