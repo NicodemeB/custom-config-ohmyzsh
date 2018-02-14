@@ -1,2 +1,2 @@
-cp -r ~/.oh-my-zsh .
-cp ~/.zshrc .
+cp -r ~/.oh-my-zsh config/
+cp ~/.zshrc config/

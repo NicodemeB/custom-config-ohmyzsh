@@ -124,20 +124,9 @@ mkdircd (){
   	cd "$1"
 }
 
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 DEFAULT_USER prompt_context(){}
-export EDITOR=subl
-. ~/.soundsrc
-
-
-        
-# eval $(thefuck --alias)
-# You can use whatever you want as an alias, like for Mondays:
-# eval $(thefuck --alias FUCK)
-
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 
-export PATH=/Applications/MAMP/bin/php/php7.1/bin:$PATH
-
+###MACS PROPER PART###

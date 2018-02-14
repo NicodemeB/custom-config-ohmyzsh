@@ -8,8 +8,11 @@ cd fonts
 cd .. 
 rm -rf fonts
 
-cp -r .oh-my-zsh ~/
-cp .zshrc ~/
+cp -r config/.oh-my-zsh ~/
+if [ $1 -eq "-mac" ]
+	then 
+	cp config/.zshrc ~/
+fi
 
 source ~/.zshrc
 
